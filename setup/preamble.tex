@@ -1,4 +1,5 @@
-\documentclass[a4paper,twoside]{memoir}
+%\documentclass[a4paper,twoside,twocolumn,article]{memoir}
+\documentclass[a4paper,twoside,11pt,article]{memoir}
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \linespread{1.05}
@@ -8,9 +9,47 @@
 \usepackage[english]{babel}
 \usepackage{ucs}
 \usepackage[T1]{fontenc}
-\usepackage{cleveref}
+\usepackage{amsthm}
+\usepackage{amsmath}
 \usepackage{cite}
 \usepackage{subfiles}
-
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{listings}
+\usepackage{float}
+\usetikzlibrary{matrix,positioning}
+\usepackage{todonotes}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\lstset{ frame=single,
+  language=[Sharp]C,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  captionpos=b,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  extendedchars=true,
+  literate=%
+  {æ}{{\ae}}1
+  {å}{{\aa}}1
+  {ø}{{\o}}1
+  {Æ}{{\AE}}1
+  {Å}{{\AA}}1
+  {Ø}{{\O}}1
+}
 %setup stuff
-\chapterstyle{section}
+%\setlength{\columnsep}{1cm}
+\setcounter{secnumdepth}{3}
+\usepackage{cleveref}
